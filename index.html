@@ -1,3 +1,4 @@
+<!-- Updated index.html with Technical Skills Icons added and Stats section removed -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,43 +34,36 @@
             </div>
         </section>
 
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>40%</h3>
-                    <p>Reduction in Infrastructure Build Time via <strong>Terraform</strong></p>
-                </div>
-                <div class="stat-item">
-                    <h3>50%</h3>
-                    <p>Reduction in Application Release Cycles with <strong>Jenkins/ArgoCD</strong></p>
-                </div>
-                <div class="stat-item">
-                    <h3>5x Certified</h3>
-                    <p>Expertise in <strong>AWS</strong> and <strong>Oracle Cloud Infrastructure</strong></p>
-                </div>
-            </div>
-        </div>
-
+        <!-- Removed Stats Section Completely -->
 
         <section id="about" class="container">
             <h2>About Me & Expertise</h2>
             <div class="about-content">
                 <p>I am a results-driven <strong>AWS Cloud and DevOps Engineer</strong> with 2 years of professional experience. I specialize in bridging the gap between development and operations by implementing robust Infrastructure as Code (IaC) and CI/CD solutions.</p>
-                <p>My core focus is automation. I leverage <strong>Terraform</strong> to architect and provision critical AWS infrastructure components, ensuring environment consistency and rapid deployment across multiple stages. This approach has demonstrably reduced infrastructure build time by up to <strong>40%</strong>.</p>
-                <p>I am proficient in building zero-touch CI/CD pipelines using <strong>Jenkins</strong> and <strong>ArgoCD</strong>, which has contributed to reducing application release cycles by <strong>50%</strong>. Whether managing containerized workloads in AWS EKS or optimizing core AWS resources for high availability, my goal is always to drive efficiency and performance.</p>
+                <p>My core focus is automation. I leverage <strong>Terraform</strong> to architect and provision critical AWS infrastructure components, ensuring environment consistency and rapid deployment across multiple stages.</p>
+                <p>I am proficient in building zero-touch CI/CD pipelines using <strong>Jenkins</strong> and <strong>ArgoCD</strong>, and managing workloads using Docker, Kubernetes, and monitoring tools.</p>
             </div>
-            
-            <h3 style="text-align: center; margin-top: 50px;">Core Technical Skills</h3>
-            <ul class="skill-list">
-                <li>AWS</li>
-                <li>Terraform</li>
-                <li>Jenkins</li>
-                <li>ArgoCD</li>
-                <li>Docker & Kubernetes (EKS)</li>
-                <li>Python & Bash</li>
-                <li>CloudWatch, Prometheus, Grafana</li>
-                <li>SQL, MySQL, PostgreSQL, MongoDB</li>
-            </ul>
+
+            <h3 style="text-align: center; margin-top: 40px;">Core Technical Skills</h3>
+
+            <div class="tech-grid">
+                <a href="https://aws.amazon.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/aws.png" alt="AWS" /></a>
+                <a href="https://www.oracle.com/cloud/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/oracle.png" alt="OCI" /></a>
+                <a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="MySQL" /></a>
+                <a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" /></a>
+                <a href="https://www.mongodb.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="MongoDB" /></a>
+                <a href="https://github.com/actions"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github-actions.png" alt="GitHub Actions" /></a>
+                <a href="https://www.jenkins.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jenkins.png" alt="Jenkins" /></a>
+                <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/argocd.png" alt="ArgoCD" /></a>
+                <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" /></a>
+                <a href="https://kubernetes.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/kubernetes.png" alt="Kubernetes" /></a>
+                <a href="https://helm.sh/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/helm.png" alt="Helm" /></a>
+                <a href="https://www.terraform.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/terraform.png" alt="Terraform" /></a>
+                <a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png" alt="Bash" /></a>
+                <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" /></a>
+                <a href="https://prometheus.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/prometheus.png" alt="Prometheus" /></a>
+                <a href="https://grafana.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/grafana.png" alt="Grafana" /></a>
+            </div>
 
         </section>
 
@@ -78,64 +72,28 @@
             <h2>Featured Case Studies</h2>
             <div class="project-card">
                 <h3><a href="project-1-case-study.html">Production-Grade Infrastructure Deployment and Automated CI/CD on AWS</a></h3>
-                <p>Developed a scalable AWS infrastructure blueprint using <strong>Terraform</strong>, cutting manual configuration efforts by 80% and implementing a robust <strong>Jenkins</strong> CI/CD pipeline.</p>
-                <p>Tools: <strong>Terraform</strong>, <strong>Jenkins</strong>, Docker, AWS (EC2, RDS, S3, IAM, VPC)</p>
+                <p>Developed a scalable AWS infrastructure blueprint using <strong>Terraform</strong> and implemented a robust <strong>Jenkins</strong> pipeline.</p>
             </div>
             <div class="project-card">
-                <h3><a href="project-2-case-study.html">Multi-Region Cloud-Native Microservices Platform with GitOps</a></h3>
-                <p>Implemented a fully declarative <strong>GitOps</strong> approach using <strong>ArgoCD</strong> to manage EKS cluster state, providing continuous deployment synchronization and full auditability.</p>
-                <p>Tools: Kubernetes (EKS), <strong>ArgoCD</strong>, GitHub Actions, Docker, Helm</p>
+                <h3><a href="project-2-case-study.html">Multi-Region Cloud-Native Platform with GitOps</a></h3>
+                <p>Implemented a fully declarative <strong>ArgoCD</strong> GitOps workflow managing EKS deployments.</p>
             </div>
         </section>
 
 
         <section id="certs" class="container">
-            <h2>Certifications & Education (5 Certs)</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Verifiable proof of expertise across critical cloud providers. <strong>Remember to update the href links</strong> to your official certification verification pages.</p>
-            
+            <h2>Certifications & Education</h2>
             <div class="certifications-grid">
-                
-                <div class="cert-item">
-                    <a href="YOUR_AWS_SAA_VERIFICATION_LINK" target="_blank">
-                        <img src="images/aws-saa-badge.png" alt="AWS Solutions Architect Associate Badge">
-                    </a>
-                    <p>AWS SAA</p>
-                </div>
-                
-                <div class="cert-item">
-                    <a href="YOUR_AWS_CCP_VERIFICATION_LINK" target="_blank">
-                        <img src="images/aws-cpp-badge.png" alt="AWS Certified Cloud Practitioner Badge">
-                    </a>
-                    <p>AWS CCP</p>
-                </div>
-                
-                <div class="cert-item">
-                    <a href="YOUR_OCI_ARCHITECT_VERIFICATION_LINK" target="_blank">
-                        <img src="images/oci-arch-badge.png" alt="OCI Certified Architect Associate Badge">
-                    </a>
-                    <p>OCI Architect</p>
-                </div>
-
-                <div class="cert-item">
-                    <a href="YOUR_OCI_FOUNDATIONS_VERIFICATION_LINK" target="_blank">
-                        <img src="images/oci-foundations-badge.png" alt="OCI Certified Foundations Associate Badge">
-                    </a>
-                    <p>OCI Foundations</p>
-                </div>
-                
-                <div class="cert-item">
-                    <a href="YOUR_OCI_DATA_PLATFORM_VERIFICATION_LINK" target="_blank">
-                        <img src="images/oci-data-badge.png" alt="Oracle Data Platform Engineer Badge">
-                    </a>
-                    <p>OCI Data Eng.</p>
-                </div>
+                <div class="cert-item"><img src="images/aws-saa-badge.png"><p>AWS SAA</p></div>
+                <div class="cert-item"><img src="images/aws-cpp-badge.png"><p>AWS CCP</p></div>
+                <div class="cert-item"><img src="images/oci-arch-badge.png"><p>OCI Architect</p></div>
+                <div class="cert-item"><img src="images/oci-foundations-badge.png"><p>OCI Foundations</p></div>
+                <div class="cert-item"><img src="images/oci-data-badge.png"><p>OCI Data Eng.</p></div>
             </div>
 
-            <h3 style="text-align: center; margin-top: 50px;">Education</h3>
-            <div style="text-align: center;">
-                <p>M.Sc. in Computer Science | Pune University | 2021-23</p>
-                <p>B.Sc. in Computer Science | Pune University | 2018-21</p>
-            </div>
+            <h3 style="text-align:center;margin-top:40px;">Education</h3>
+            <p style="text-align:center;">M.Sc. in Computer Science | Pune University</p>
+            <p style="text-align:center;">B.Sc. in Computer Science | Pune University</p>
         </section>
 
     </main>
@@ -145,16 +103,133 @@
             <h3>Connect with Me</h3>
             <p>pruthvirajphadatare@outlook.com</p>
         </div>
-        
+
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">
-                <img src="images/linkedin-icon.png" alt="LinkedIn Profile">
-            </a>
-            <a href="https://github.com/PruthvirajPhadatare" target="_blank">
-                <img src="images/github-icon.png" alt="GitHub Profile">
-            </a>
+            <a href="https://www.linkedin.com/in/pruthvirajphadatare"><img src="images/linkedin-icon.png"></a>
+            <a href="https://github.com/PruthvirajPhadatare"><img src="images/github-icon.png"></a>
         </div>
-        <p style="font-size: 0.8em; margin-top: 20px; color: #777;">&copy; 2024 Pruthviraj Phadatare. Built with HTML and CSS.</p>
+
+        <p style="font-size: 0.8em; margin-top: 20px; color: #777;">© 2024 Pruthviraj Phadatare</p>
     </footer>
+
+</body>
+</html><!-- Updated index.html with technical skills icons and removed stats -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruthviraj Phadatare - AWS Cloud & DevOps Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Pruthviraj Phadatare</h1>
+            <nav class="nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#certs">Certifications</a>
+                <a href="#contact-footer">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION (removing big gap) -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Driving Efficiency with Automated Cloud Infrastructure</h1>
+                <p class="hero-subtitle">AWS Cloud & DevOps Engineer | IaC (<strong>Terraform</strong>) and CI/CD Automation Specialist</p>
+                <p style="text-align: center;">
+                    <a href="PruthvirajPhadatare.pdf" download class="download-button">Download Latest Resume</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- REMOVED the 40%, 50%, 5x stats grid -->
+
+        <section id="about" class="container">
+            <h2>About Me & Expertise</h2>
+
+            <div class="about-content">
+                <p>I am a results-driven <strong>AWS Cloud and DevOps Engineer</strong> with 2 years of professional experience. I specialize in bridging the gap between development and operations by implementing robust Infrastructure as Code (IaC) and CI/CD solutions.</p>
+                <p>My core focus is automation. I leverage <strong>Terraform</strong> to architect and provision critical AWS infrastructure components, ensuring environment consistency and rapid deployment across multiple stages.</p>
+                <p>I am proficient in building zero-touch CI/CD pipelines using <strong>Jenkins</strong> and <strong>ArgoCD</strong>. Whether managing containerized workloads in AWS EKS or optimizing core AWS resources, my goal is always to drive efficiency and performance.</p>
+            </div>
+
+            <!-- TECH ICON GRID (like cert section squares) -->
+            <h3 style="text-align: center; margin-top: 50px;">Core Technical Skills</h3>
+
+            <div class="tech-grid">
+                <a href="https://aws.amazon.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/aws.png" alt="AWS"></a>
+                <a href="https://www.oracle.com/cloud/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/oracle.png" alt="OCI"></a>
+                <a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="MySQL"></a>
+                <a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL"></a>
+                <a href="https://www.mongodb.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="MongoDB"></a>
+                <a href="https://github.com/actions"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github-actions.png" alt="GitHub Actions"></a>
+                <a href="https://www.jenkins.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/jenkins.png" alt="Jenkins"></a>
+                <a href="https://argoproj.github.io/cd/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/argocd.png" alt="ArgoCD"></a>
+                <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker"></a>
+                <a href="https://kubernetes.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/kubernetes.png" alt="Kubernetes"></a>
+                <a href="https://helm.sh/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/helm.png" alt="Helm"></a>
+                <a href="https://www.terraform.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/terraform.png" alt="Terraform"></a>
+                <a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png" alt="Bash"></a>
+                <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python"></a>
+                <a href="https://prometheus.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/prometheus.png" alt="Prometheus"></a>
+                <a href="https://grafana.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/grafana.png" alt="Grafana"></a>
+            </div>
+
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Featured Case Studies</h2>
+
+            <div class="project-card">
+                <h3><a href="project-1-case-study.html">Production-Grade Infrastructure Deployment and Automated CI/CD on AWS</a></h3>
+                <p>Developed a scalable AWS infrastructure blueprint using <strong>Terraform</strong> and implemented a robust <strong>Jenkins</strong> CI/CD pipeline.</p>
+                <p>Tools: <strong>Terraform</strong>, <strong>Jenkins</strong>, Docker, AWS (EC2, RDS, S3, IAM, VPC)</p>
+            </div>
+
+            <div class="project-card">
+                <h3><a href="project-2-case-study.html">Multi-Region Cloud-Native Microservices Platform with GitOps</a></h3>
+                <p>Implemented a fully declarative <strong>GitOps</strong> approach using <strong>ArgoCD</strong> for continuous deployment.</p>
+                <p>Tools: Kubernetes (EKS), <strong>ArgoCD</strong>, GitHub Actions, Docker, Helm</p>
+            </div>
+        </section>
+
+
+        <section id="certs" class="container">
+            <h2>Certifications & Education</h2>
+
+            <div class="certifications-grid">
+                <div class="cert-item"><img src="images/aws-saa-badge.png"><p>AWS SAA</p></div>
+                <div class="cert-item"><img src="images/aws-cpp-badge.png"><p>AWS CCP</p></div>
+                <div class="cert-item"><img src="images/oci-arch-badge.png"><p>OCI Architect</p></div>
+                <div class="cert-item"><img src="images/oci-foundations-badge.png"><p>OCI Foundations</p></div>
+                <div class="cert-item"><img src="images/oci-data-badge.png"><p>OCI Data Eng.</p></div>
+            </div>
+
+            <h3 style="text-align:center; margin-top:50px;">Education</h3>
+            <p style="text-align:center;">M.Sc. in Computer Science | Pune University</p>
+            <p style="text-align:center;">B.Sc. in Computer Science | Pune University</p>
+        </section>
+
+    </main>
+
+    <footer id="contact-footer">
+        <div class="contact-info">
+            <h3>Connect with Me</h3>
+            <p>pruthvirajphadatare@outlook.com</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/pruthvirajphadatare"><img src="images/linkedin-icon.png"></a>
+            <a href="https://github.com/PruthvirajPhadatare"><img src="images/github-icon.png"></a>
+        </div>
+    </footer>
+
 </body>
 </html>
