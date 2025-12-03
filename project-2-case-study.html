@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: GitOps Microservices Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Project 2 Case Study</h1>
+            <nav class="nav">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Me</a>
+                <a href="project-1-case-study.html">Project 1</a>
+                <a href="index.html#contact-footer">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="case-study-container">
+        <h1>Multi-Region Cloud-Native Microservices Platform with GitOps</h1>
+
+        <h2>Challenge</h2>
+        <p>The organization required a scalable, cloud-native solution for running microservices that could be managed consistently across environments. The key challenge was establishing an automated, auditable, and reliable deployment model that minimized manual cluster interaction.</p>
+
+        <h2>Solution Overview</h2>
+        <p>I established an AWS EKS (Elastic Kubernetes Service) cluster and implemented a fully declarative <strong>GitOps</strong> model using <strong>ArgoCD</strong> to manage the application state.</p>
+
+        <ul class="tech-stack-list">
+            <li><strong>Orchestration:</strong> Kubernetes (AWS EKS), Helm</li>
+            <li><strong>GitOps:</strong> ArgoCD</li>
+            <li><strong>CI:</strong> GitHub Actions, Docker, Amazon ECR</li>
+            <li><strong>Observability:</strong> Prometheus, Grafana</li>
+        </ul>
+
+        <h2>Architectural Flow (GitOps)</h2>
+        <p>This model separates the Configuration (Git) from the Deployment (ArgoCD):</p>
+        
+        <ol>
+            <li>A developer updates the application code in the App Repository.</li>
+            <li>A <strong>CI Pipeline</strong> (GitHub Actions) builds the Docker image and pushes it to Amazon ECR.</li>
+            <li>The CI Pipeline automatically updates the new image tag in the <strong>Git Configuration Repository</strong> (manifests/Helm charts).</li>
+            <li><strong>ArgoCD</strong> (running inside EKS) continuously monitors the Git Config Repository.</li>
+            <li>If a change is detected, ArgoCD automatically **synchronizes** the EKS cluster to match the desired state in Git, initiating the deployment.</li>
+        </ol>
+
+        <div class="diagram-placeholder" style="text-align: center;">
+            <p><strong>GitOps Platform Architecture Diagram:</strong></p>
+            <img src="images/gitops-flow.png" alt="Technical diagram showing the GitOps flow from Git (Source of Truth) to ArgoCD, synchronizing with the AWS EKS Cluster (Live State).">
+        </div>
+
+        <h2>Key Responsibilities & Impact</h2>
+
+        <p><strong>ArgoCD Implementation:</strong></p>
+        <ul>
+            <li>I implemented <strong>ArgoCD</strong> in the AWS EKS cluster, establishing the Git repository as the <strong>single source of truth</strong> for the desired application state.</li>
+            <li>Configured auto-sync and self-healing capabilities, ensuring the live state always conforms to the repository.</li>
+            <li><strong>Impact:</strong> This <strong>GitOps</strong> implementation eliminated manual deployments, reduced rollback time by <strong>90%</strong>, and provided a full, auditable deployment history.</li>
+        </ul>
+
+        <p><strong>Containerization and Observability:</strong></p>
+        <ul>
+            <li>Packaged and optimized application services using Docker and <strong>Helm charts</strong> for standardized deployment.</li>
+            <li>Integrated <strong>Prometheus</strong> for monitoring and <strong>Grafana</strong> for visualization, providing deep insights into cluster and microservice performance.</li>
+            <li><strong>Impact:</strong> Enhanced resource utilization and greatly improved diagnostic capability and mean-time-to-resolution (MTTR).</li>
+        </ul>
+        
+    </div>
+</body>
+</html>
