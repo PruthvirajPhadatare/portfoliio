@@ -1,4 +1,4 @@
-/* Updated style.css with minimized header gap, removed stats section, and added tech icons grid */
+/* Updated style.css with minimized header gap, tech icons with names, project cards, and clickable certs */
 
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -148,7 +148,7 @@ h2::after {
     justify-items: center;
     margin-top: 40px;
 }
-.tech-grid img {
+.tech-item img {
     width: 55px;
     background: #fff;
     padding: 10px;
@@ -156,8 +156,14 @@ h2::after {
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
     transition: transform 0.2s;
 }
-.tech-grid img:hover {
+.tech-item img:hover {
     transform: scale(1.1);
+}
+.tech-item p {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 0.85em;
+    text-align: center;
 }
 
 /* Projects */
@@ -179,23 +185,29 @@ h2::after {
     font-weight: 700;
 }
 
-/* Cert Grid */
+/* Certifications */
 .certifications-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
-.cert-item img {
+.cert-item a img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     border: 4px solid #eee;
     transition: 0.2s;
 }
-.cert-item img:hover {
+.cert-item a img:hover {
     transform: scale(1.1);
     border-color: #ff9900;
+}
+.cert-item p {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
 }
 
 /* Footer */
