@@ -1,181 +1,142 @@
-/* Updated final style.css with tech grid, certs, and case-study styles */
-
+/* Global */
 body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-color: #eef2f5;
-    color: #333;
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background: #f8f9fb;
+    color: #222;
 }
 
-a {
-    color: #007acc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-a:hover { color: #ff9900; }
-
-/* --- Header and Navigation --- */
 .header {
-    background: #1c1d1e;
-    color: white;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
 }
+
 .header-content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .nav a {
-    color:white;
-    margin-left:25px;
-    padding:5px 0;
-    position:relative;
-}
-.nav a:hover { color:#ff9900; }
-.nav a::after {
-    content:'';
-    position:absolute;
-    width:0;
-    height:2px;
-    display:block;
-    margin-top:5px;
-    left:0;
-    background:#ff9900;
-    transition: width 0.3s ease;
-}
-.nav a:hover::after, .nav a.active::after { width:100%; }
-
-/* --- Sections --- */
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-section {
-    padding: 40px 0;
-    background:white;
-    margin-bottom:20px;
-    border-radius:6px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.1);
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
 }
 
-/* Section Titles */
-h2 {
-    text-align:center;
-    color:#222;
-    font-size:2em;
-    margin-bottom:30px;
-    padding-bottom:10px;
-    position:relative;
-}
-h2::after {
-    content:'';
-    position:absolute;
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
-    width:60px;
-    height:3px;
-    background:#007acc;
-    border-radius:2px;
+.hero {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* --- Hero --- */
-#home {
-    background:#1c1d1e;
-    color:white;
-    padding:70px 0;
-    text-align:center;
-    border-radius:6px;
-    margin-top:10px;
+.skills-section h2,
+.about-section h2,
+.cert-section h2,
+.project-section h2 {
+    text-align: center;
 }
-.hero-title { font-size:3em; font-weight:800; }
-.hero-subtitle { font-size:1.2em; color:#bbb; margin-bottom:25px; }
-.download-button {
-    background:#ff9900;
-    padding:12px 28px;
-    border-radius:30px;
-    color:#1c1d1e;
-    font-weight:bold;
-}
-.download-button:hover { background:#007acc; color:white; }
 
-/* --- Skills --- */
 .tech-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
-    gap:25px;
-    justify-items:center;
-    margin-top:40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
+
+.tech-item {
+    text-align: center;
+}
+
 .tech-item img {
-    width:55px;
-    padding:10px;
-    background:white;
-    border-radius:10px;
-    box-shadow:0 2px 4px rgba(0,0,0,0.15);
-    transition:transform 0.2s;
-}
-.tech-item img:hover { transform:scale(1.1); }
-.tech-item p { font-size:0.85em; margin-top:8px; font-weight:600; text-align:center; }
-
-/* --- Projects --- */
-.project-card {
-    padding:30px;
-    margin-bottom:25px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    transition:0.2s;
-}
-.project-card:hover {
-    transform:translateY(-5px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    width: 60px;
+    height: 60px;
 }
 
-/* --- Certifications --- */
-.certifications-grid {
-    display:flex;
-    flex-wrap:wrap;
-    gap:40px;
-    justify-content:center;
+/* Certifications */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
 }
+
 .cert-item img {
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    border:4px solid #eee;
-    transition:0.2s;
+    width: 120px;
+    height: 120px;
 }
-.cert-item img:hover { transform:scale(1.1); border-color:#ff9900; }
-.cert-item p { margin-top:8px; font-weight:600; text-align:center; }
 
-/* --- Footer --- */
-#contact-footer {
-    background:#1c1d1e;
-    color:white;
-    text-align:center;
-    padding:50px 0;
+.cert-item p {
+    margin-top: 10px;
+    font-weight: 600;
 }
-.social-icons {
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:20px;
-}
-.social-icons img { width:45px; height:45px; border-radius:50%; }
 
-/* --- Responsive --- */
+/* Project Buttons */
+.project-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-btn {
+    padding: 10px 20px;
+    background: #007acc;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* ==================== YOUR CASE STUDY CSS (UNCHANGED) ==================== */
+
+.case-study-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.case-study-container h1 {
+    font-size: 2em;
+    text-align: left;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.tech-stack-list {
+    list-style: none;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.tech-stack-list li {
+    font-weight: 500;
+}
+
+.diagram-placeholder {
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.diagram-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .tech-grid { gap:18px; }
-    .project-card { padding:20px; }
+    .header-content { flex-direction: column; }
+    .hero-title { font-size: 2.5em; }
+    .stats-grid { flex-direction: column; }
 }
