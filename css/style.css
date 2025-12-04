@@ -185,29 +185,40 @@ h2::after {
 }
 
 /* --- Certifications --- */
+
+/* --- Certifications --- */
 .certifications-grid {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:40px;
 }
-.cert-item a img {
+
+.cert-item {
+    text-align:center;  /* ensures name is centered under badge */
+}
+
+.cert-item img {
     width:90px;
     height:90px;
     border-radius:50%;
     border:4px solid #eee;
-    transition:0.2s;
+    transition: transform 0.2s, border-color 0.2s;
+    object-fit:cover; /* ensures badge fits inside circle */
 }
-.cert-item a img:hover {
+
+.cert-item img:hover {
     transform:scale(1.1);
     border-color:#ff9900;
 }
+
 .cert-item p {
     margin-top:8px;
     font-weight:600;
     font-size:0.95em;
     text-align:center;
 }
+
 
 /* --- Case Study Pages (Project 1 & 2) --- */
 .case-study-container {
@@ -311,3 +322,4 @@ h2::after {
         margin:12px;
     }
 }
+
