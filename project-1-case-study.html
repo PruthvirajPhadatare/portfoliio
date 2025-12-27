@@ -1,72 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1: Automated CI/CD on AWS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Production-Grade CI/CD & Infrastructure Automation on AWS</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-content">
-            <h1>Project 1 Case Study</h1>
-            <nav class="nav">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#about">About Me</a>
-                <a href="project-2-case-study.html">Project 2</a>
-                <a href="index.html#contact-footer">Contact</a>
-            </nav>
-        </div>
-    </header>
+<div class="case-study-container">
 
-    <div class="case-study-container">
-        <h1>Production-Grade Infrastructure Deployment and Automated CI/CD on AWS</h1>
+<h1>Production-Grade CI/CD & Infrastructure Automation on AWS</h1>
 
-        <h2>Challenge</h2>
-        <p>The goal was to establish a scalable, secure, and reproducible AWS environment for an application, moving away from manual, error-prone configurations. This required provisioning core components using <strong>IaC</strong> and setting up a reliable, high-speed release mechanism.</p>
+<h2>Challenge</h2>
+<p>
+Manual infrastructure provisioning and deployments resulted in inconsistency,
+security risks, and slow release cycles.
+</p>
 
-        <h2>Solution Overview</h2>
-        <p>I developed a scalable AWS infrastructure blueprint using <strong>Terraform</strong> and implemented a robust, end-to-end <strong>Jenkins</strong> CI/CD pipeline to automate the deployment process.</p>
+<h2>Solution Overview</h2>
+<p>
+I implemented Infrastructure as Code using Terraform and built a Jenkins-based
+CI/CD pipeline to automate containerized application deployments on AWS ECS.
+</p>
 
-        <ul class="tech-stack-list">
-            <li><strong>Infrastructure:</strong> AWS (EC2, RDS, S3, IAM, VPC)</li>
-            <li><strong>IaC:</strong> Terraform (Modular Architecture)</li>
-            <li><strong>CI/CD:</strong> Jenkins, Docker, Maven/Gradle</li>
-        </ul>
+<ul class="tech-stack-list">
+  <li><strong>Cloud:</strong> AWS (ECS, ALB, VPC, IAM)</li>
+  <li><strong>IaC:</strong> Terraform</li>
+  <li><strong>CI/CD:</strong> Jenkins, Docker</li>
+  <li><strong>Monitoring:</strong> CloudWatch</li>
+</ul>
 
-        <h2>Architectural Flow</h2>
-        <p>The solution enforces continuous integration and continuous delivery:</p>
-        
-        <ol>
-            <li>Code is pushed to a Git repository (e.g., GitHub).</li>
-            <li>A webhook triggers the <strong>Jenkins CI/CD Pipeline</strong>.</li>
-            <li>Jenkins performs automated <strong>Build, Test, and Package</strong> steps.</li>
-            <li>Jenkins executes <strong>Terraform</strong> scripts to provision or update the VPC, EC2, and RDS infrastructure on AWS.</li>
-            <li>Jenkins performs the final <strong>Deployment</strong> of the built artifact to the provisioned EC2 instance.</li>
-        </ol>
+<h2>Architectural Flow</h2>
+<ol>
+  <li>Code pushed to GitHub</li>
+  <li>Jenkins pipeline triggered</li>
+  <li>Docker image built</li>
+  <li>Terraform provisions AWS resources</li>
+  <li>Application deployed to ECS</li>
+</ol>
 
-        <div class="diagram-placeholder" style="text-align: center;">
-            <p><strong>CI/CD Pipeline Architecture Diagram:</strong></p>
-            <img src="images/cicd-flow.png" alt="Technical diagram showing the CI/CD flow from Git to Jenkins, then to Terraform for AWS provisioning, and finally deployment.">
-        </div>
+<h2>Impact</h2>
+<ul>
+  <li>Eliminated manual deployments</li>
+  <li>Improved deployment reliability</li>
+  <li>Enabled scalable infrastructure automation</li>
+</ul>
 
-        <h2>Key Responsibilities & Impact</h2>
+<p><strong>GitHub:</strong>
+<a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
+View Repository
+</a></p>
 
-        <p><strong>IaC Development with Terraform:</strong></p>
-        <ul>
-            <li>Architected and provisioned critical AWS components (VPC, Subnets, Security Groups, IAM Roles, EC2, RDS).</li>
-            <li>Used Terraform modules to ensure code reusability and maintainability.</li>
-            <li><strong>Impact:</strong> This modular blueprint cut down manual configuration efforts by up to <strong>80%</strong> and enforced security standards from the start.</li>
-        </ul>
-
-        <p><strong>Jenkins CI/CD Implementation:</strong></p>
-        <ul>
-            <li>Built a zero-touch CI/CD pipeline in <strong>Jenkins</strong> that automatically handles the build, test, and deployment phases.</li>
-            <li>Integrated Docker for containerizing the application before deployment, guaranteeing quick and reliable software releases.</li>
-            <li><strong>Impact:</strong> Reduced application deployment time from hours to minutes, achieving a significant boost in release frequency.</li>
-        </ul>
-        
-    </div>
+</div>
 </body>
 </html>
