@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Production-Grade CI/CD & Infrastructure Automation on AWS</title>
+  <title>Production-Grade CI/CD on AWS</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,14 +13,15 @@
 
 <h2>Challenge</h2>
 <p>
-Manual infrastructure provisioning and deployments resulted in inconsistency,
+Manual infrastructure provisioning and deployments resulted in inconsistent environments,
 security risks, and slow release cycles.
 </p>
 
 <h2>Solution Overview</h2>
 <p>
-I implemented Infrastructure as Code using Terraform and built a Jenkins-based
-CI/CD pipeline to automate containerized application deployments on AWS ECS.
+I implemented Infrastructure as Code using <strong>Terraform</strong> and built a
+<strong>Jenkins-based CI/CD pipeline</strong> to automate containerized application deployments
+on <strong>Amazon ECS</strong>.
 </p>
 
 <ul class="tech-stack-list">
@@ -32,26 +33,32 @@ CI/CD pipeline to automate containerized application deployments on AWS ECS.
 
 <h2>Architectural Flow</h2>
 <ol>
-  <li>Code pushed to GitHub</li>
-  <li>Jenkins pipeline triggered</li>
-  <li>Docker image built</li>
-  <li>Terraform provisions AWS resources</li>
-  <li>Application deployed to ECS</li>
+  <li>Developer pushes code to GitHub.</li>
+  <li>Jenkins pipeline is triggered automatically.</li>
+  <li>Application is containerized using Docker.</li>
+  <li>Terraform provisions and manages AWS infrastructure.</li>
+  <li>Container is deployed to ECS via ALB.</li>
 </ol>
 
-<h2>Impact</h2>
+<div class="diagram-placeholder">
+  <p><strong>CI/CD Architecture Diagram</strong></p>
+  <img src="images/aws-cicd-architecture.png" alt="AWS CI/CD Architecture Diagram">
+</div>
+
+<h2>Key Responsibilities & Impact</h2>
 <ul>
-  <li>Eliminated manual deployments</li>
-  <li>Improved deployment reliability</li>
-  <li>Enabled scalable infrastructure automation</li>
+  <li>Automated AWS infrastructure using Infrastructure as Code.</li>
+  <li>Implemented zero-touch CI/CD deployments with Jenkins.</li>
+  <li>Improved deployment reliability and reduced manual effort.</li>
 </ul>
 
-<p><strong>GitHub:</strong>
-<a href="https://github.com/PruthvirajPhadatare/End-to-End-CI-CD-Infra-on-AWS" target="_blank">
-View Repository
-</a></p>
+<p>
+<strong>GitHub Repository:</strong>
+<a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
+View Project
+</a>
+</p>
 
 </div>
 </body>
 </html>
-
