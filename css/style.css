@@ -1,89 +1,106 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: Inter, Segoe UI, sans-serif;
+  margin: 0;
+  background: #eef2f5;
+  color: #333;
 }
 
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
-  color: #111;
-  line-height: 1.7;
+.header {
+  background: #1c1d1e;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: #ff9900;
 }
 
 .container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 80px 24px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.hero h1 {
+.hero-section {
+  background: #1c1d1e;
+  color: #fff;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.hero-title {
   font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 12px;
 }
 
-.tagline {
-  font-size: 1.4rem;
-  color: #444;
-  margin-bottom: 24px;
+.hero-subtitle {
+  color: #bbb;
 }
 
-.intro {
-  max-width: 620px;
-  font-size: 1.05rem;
-  color: #333;
-}
-
-.links {
-  margin-top: 28px;
-}
-
-.links a {
-  margin-right: 20px;
-  font-weight: 600;
+.download-button {
+  background: #ff9900;
   color: #000;
-  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: bold;
 }
 
-.links a:hover {
-  text-decoration: underline;
+section {
+  background: #fff;
+  padding: 40px;
+  margin: 25px 0;
+  border-radius: 8px;
 }
 
-.section {
-  margin-top: 100px;
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 28px;
+.tech-item {
+  text-align: center;
 }
 
-.work {
-  margin-bottom: 40px;
+.tech-item img {
+  width: 50px;
 }
 
-.work h3 {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+.project-card {
+  border: 1px solid #ddd;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-.work p {
-  max-width: 620px;
-  color: #444;
+.certifications-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.focus {
-  font-size: 1.05rem;
-  color: #333;
-}
-
-.certs {
-  color: #444;
-  line-height: 1.8;
+.cert-item img {
+  width: 90px;
 }
 
 footer {
-  margin-top: 140px;
-  color: #777;
-  font-size: 0.9rem;
+  background: #1c1d1e;
+  color: #aaa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 0 10px;
 }
