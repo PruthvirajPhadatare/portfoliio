@@ -2,43 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kubernetes GitOps CI/CD | Pruthviraj Phadatare</title>
+  <title>Project 2 | Kubernetes GitOps CI/CD</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<main class="container">
+<header class="header">
+  <div class="header-content">
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About Me</a>
+      <a href="project-1-case-study.html">Project 1</a>
+      <a href="index.html#contact-footer">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<a class="back" href="index.html">← Back</a>
+<div class="case-study-container">
 
-<h1>Kubernetes GitOps CI/CD Platform</h1>
+  <h1>Cloud-Native Kubernetes Platform with GitOps CI/CD</h1>
 
-<p class="lead">
-A Git-driven deployment model where Kubernetes clusters continuously
-sync to the desired state defined in version control.
-</p>
+  <h2>Challenge</h2>
+  <p>
+    Traditional Kubernetes deployments required manual cluster access,
+    resulting in configuration drift, limited traceability, and risky rollbacks.
+  </p>
 
-<h3>What I Built</h3>
-<ul>
-  <li>CI pipelines using GitHub Actions</li>
-  <li>Declarative Kubernetes manifests</li>
-  <li>Git as the single source of truth</li>
-  <li>NGINX ingress-based exposure</li>
-</ul>
+  <h2>Solution Overview</h2>
+  <p>
+    I implemented a <strong>GitOps-based CI/CD workflow</strong> using
+    <strong>GitHub Actions</strong>, where Git acts as the single source of truth
+    for Kubernetes deployments.
+  </p>
 
-<h3>Why This Matters</h3>
-<p>
-GitOps improves traceability, simplifies rollbacks,
-and enforces consistent deployments across environments.
-</p>
+  <ul class="tech-stack-list">
+    <li><strong>Orchestration:</strong> Kubernetes</li>
+    <li><strong>CI/CD:</strong> GitHub Actions</li>
+    <li><strong>Containers:</strong> Docker</li>
+    <li><strong>GitOps:</strong> Declarative Kubernetes Manifests</li>
+    <li><strong>Ingress:</strong> NGINX</li>
+  </ul>
 
-<p>
-<a href="https://github.com/PruthvirajPhadatare" target="_blank">
-View Project on GitHub →
-</a>
-</p>
+  <h2>Architectural Flow (GitOps)</h2>
+  <ol>
+    <li>Application code is pushed to GitHub.</li>
+    <li>GitHub Actions builds and pushes container images.</li>
+    <li>Kubernetes manifests are updated in Git.</li>
+    <li>Cluster continuously reconciles desired state.</li>
+  </ol>
 
-</main>
+  <div class="diagram-placeholder">
+    <p><strong>GitOps Architecture Diagram</strong></p>
+    <img src="images/k8s-gitops-architecture.png" alt="Kubernetes GitOps Architecture Diagram">
+  </div>
+
+  <h2>Key Responsibilities & Impact</h2>
+  <ul>
+    <li>Implemented GitOps principles for Kubernetes deployments.</li>
+    <li>Eliminated manual kubectl-based deployments.</li>
+    <li>Improved deployment consistency and auditability.</li>
+  </ul>
+
+  <p>
+    <strong>GitHub Repository:</strong>
+    <a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
+      View Project on GitHub
+    </a>
+  </p>
+
+</div>
 
 </body>
 </html>

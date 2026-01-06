@@ -2,43 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CI/CD on AWS | Pruthviraj Phadatare</title>
+  <title>Project 1 | Automated CI/CD on AWS</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<main class="container">
+<header class="header">
+  <div class="header-content">
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About Me</a>
+      <a href="project-2-case-study.html">Project 2</a>
+      <a href="index.html#contact-footer">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<a class="back" href="index.html">← Back</a>
+<div class="case-study-container">
 
-<h1>Production-Grade CI/CD & Infrastructure on AWS</h1>
+  <h1>Production-Grade Infrastructure Deployment and Automated CI/CD on AWS</h1>
 
-<p class="lead">
-A real-world CI/CD system that provisions infrastructure, builds containers,
-and deploys applications automatically on AWS.
-</p>
+  <h2>Challenge</h2>
+  <p>
+    Manual AWS infrastructure provisioning and application deployments led to
+    inconsistent environments, configuration drift, and slow release cycles.
+  </p>
 
-<h3>What I Built</h3>
-<ul>
-  <li>Terraform-managed AWS infrastructure (VPC, IAM, ECS, ALB)</li>
-  <li>Jenkins CI/CD pipeline for build and deployment</li>
-  <li>Docker-based application packaging</li>
-  <li>Monitoring with CloudWatch</li>
-</ul>
+  <h2>Solution Overview</h2>
+  <p>
+    I designed a scalable AWS infrastructure using <strong>Terraform</strong> and
+    implemented a fully automated <strong>Jenkins CI/CD pipeline</strong> to build,
+    containerize, and deploy applications reliably.
+  </p>
 
-<h3>Why This Matters</h3>
-<p>
-This project demonstrates how infrastructure automation and CI/CD pipelines
-reduce manual effort, deployment risk, and release time in production systems.
-</p>
+  <ul class="tech-stack-list">
+    <li><strong>Cloud:</strong> AWS (EC2, VPC, IAM, ALB)</li>
+    <li><strong>IaC:</strong> Terraform (Modular Design)</li>
+    <li><strong>CI/CD:</strong> Jenkins, Docker</li>
+    <li><strong>Monitoring:</strong> Amazon CloudWatch</li>
+  </ul>
 
-<p>
-<a href="https://github.com/PruthvirajPhadatare" target="_blank">
-View Project on GitHub →
-</a>
-</p>
+  <h2>Architectural Flow</h2>
+  <ol>
+    <li>Developer pushes code to GitHub.</li>
+    <li>Webhook triggers Jenkins pipeline.</li>
+    <li>Application is built and containerized using Docker.</li>
+    <li>Terraform provisions or updates AWS infrastructure.</li>
+    <li>Application is deployed behind an Application Load Balancer.</li>
+  </ol>
 
-</main>
+  <div class="diagram-placeholder">
+    <p><strong>CI/CD Architecture Diagram</strong></p>
+    <img src="images/aws-cicd-architecture.png" alt="AWS CI/CD Architecture Diagram">
+  </div>
+
+  <h2>Key Responsibilities & Impact</h2>
+  <ul>
+    <li>Automated AWS infrastructure provisioning using Terraform.</li>
+    <li>Built zero-touch CI/CD pipelines with Jenkins.</li>
+    <li>Reduced deployment time and eliminated manual errors.</li>
+  </ul>
+
+  <p>
+    <strong>GitHub Repository:</strong>
+    <a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
+      View Project on GitHub
+    </a>
+  </p>
+
+</div>
 
 </body>
 </html>
