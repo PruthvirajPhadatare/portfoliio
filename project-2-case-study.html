@@ -7,76 +7,57 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-content">
-      <nav class="nav">
-        <a href="index.html#home">Home</a>
-        <a href="index.html#about">About Me</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#certs">Certifications</a>
-      </nav>
-    </div>
-  </header>
+<div class="case-study-container">
 
-  <div class="case-study-container">
+<h1>Kubernetes GitOps CI/CD Pipeline with GitHub Actions</h1>
 
-    <h1>Kubernetes GitOps CI/CD Pipeline with GitHub Actions</h1>
+<h2>Challenge</h2>
+<p>
+Manual Kubernetes deployments can lead to configuration drift,
+deployment errors, and lack of auditability.
+</p>
 
-    <h2>Challenge</h2>
-    <p>
-      Manual Kubernetes deployments can lead to configuration drift, deployment errors,
-      and lack of auditability.
-    </p>
+<h2>Solution Overview</h2>
+<p>
+I implemented a <strong>GitOps-style CI/CD pipeline</strong> using <strong>GitHub Actions</strong>,
+where Kubernetes deployments are managed declaratively with Git as the single source of truth.
+</p>
 
-    <h2>Solution Overview</h2>
-    <p>
-      I implemented a <strong>GitOps-style CI/CD pipeline</strong> using <strong>GitHub Actions</strong>,
-      where Kubernetes deployments are managed declaratively with Git as the single source of truth.
-    </p>
+<ul class="tech-stack-list">
+  <li><strong>Orchestration:</strong> Kubernetes</li>
+  <li><strong>CI/CD:</strong> GitHub Actions</li>
+  <li><strong>Containers:</strong> Docker</li>
+  <li><strong>GitOps:</strong> Declarative Kubernetes Manifests</li>
+  <li><strong>Ingress:</strong> NGINX</li>
+</ul>
 
-    <ul class="tech-stack-list">
-      <li><strong>Orchestration:</strong> Kubernetes</li>
-      <li><strong>CI/CD:</strong> GitHub Actions</li>
-      <li><strong>Containers:</strong> Docker</li>
-      <li><strong>GitOps:</strong> Declarative Kubernetes Manifests</li>
-      <li><strong>Networking:</strong> NGINX Ingress</li>
-    </ul>
+<h2>Architectural Flow</h2>
+<ol>
+  <li>Code is pushed to GitHub.</li>
+  <li>GitHub Actions updates Kubernetes manifests.</li>
+  <li>Git becomes the single source of truth.</li>
+  <li>Kubernetes reconciles desired state automatically.</li>
+</ol>
 
-    <h2>Architectural Flow</h2>
-    <ol>
-      <li>Code is pushed to GitHub.</li>
-      <li>GitHub Actions updates Kubernetes manifests.</li>
-      <li>Manifest repository becomes single source of truth.</li>
-      <li>Kubernetes reconciles desired state automatically.</li>
-    </ol>
+<div class="diagram-placeholder">
+  <p><strong>GitOps Architecture Diagram</strong></p>
+  <img src="images/k8s-gitops-architecture.png" alt="Kubernetes GitOps Architecture Diagram">
+</div>
 
-    <div class="diagram-placeholder">
-      <p><strong>GitOps Architecture Diagram</strong></p>
-      <img src="images/k8s-gitops-architecture.png" alt="Kubernetes GitOps Architecture Diagram">
-    </div>
+<h2>Key Responsibilities & Impact</h2>
+<ul>
+  <li>Implemented GitOps principles for Kubernetes deployments.</li>
+  <li>Eliminated manual cluster interaction.</li>
+  <li>Improved deployment consistency and traceability.</li>
+</ul>
 
-    <h2>Key Responsibilities & Impact</h2>
-    <ul>
-      <li>Implemented GitOps principles for Kubernetes deployments.</li>
-      <li>Eliminated manual cluster interaction.</li>
-      <li>Improved deployment consistency and traceability.</li>
-    </ul>
+<p>
+<strong>GitHub Repository:</strong>
+<a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
+View Project
+</a>
+</p>
 
-    <p>
-      <strong>GitHub Repository:</strong>
-      <a href="https://github.com/PruthvirajPhadatare/wisecow-gitops-cicd" target="_blank">
-        View Project on GitHub
-      </a>
-    </p>
-
-  </div>
-
-  <footer id="contact-footer">
-    <div class="contact-info">
-      <h3>Connect with Me</h3>
-      <p>pruthvirajphadatare@outlook.com</p>
-    </div>
-  </footer>
-
+</div>
 </body>
 </html>
