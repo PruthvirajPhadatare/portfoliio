@@ -1,43 +1,138 @@
-import { GitBranch, Server, Shield, Workflow, Github } from 'lucide-react';
+import { Server, Shield, Workflow, Github, Boxes, Activity, Layers, MessageSquare } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
-      title: 'The GitOps Microservices Platform',
-      description: 'Production-ready architecture deployed on AWS EKS with high availability.',
-      icon: GitBranch,
-      gradient: 'from-cyan-500 to-cyan-600',
-      repo: 'https://github.com/PruthvirajPhadatare/wisecow-k8s-gitops-cicd',
-      technologies: ['Kubernetes (EKS)', 'ArgoCD', 'Helm', 'Docker', 'GitOps'],
+      title: '3-Tier Application Deployment on AWS (FSPL)',
+      description: 'Designed and deployed a secure, production-ready 3-tier architecture on AWS with high availability.',
+      icon: Server,
+      gradient: 'from-orange-500 to-orange-600',
+      repo: 'https://github.com/PruthvirajPhadatare/FSPL-3Tier',
+      technologies: ['AWS', 'EC2', 'RDS', 'ALB', 'VPC', 'Linux', 'Nginx'],
       achievements: [
-        'Implemented declarative GitOps workflows for seamless deployments',
-        'Reduced deployment time from 45 minutes to 8 minutes',
-        'Achieved 99.9% deployment success rate with automated rollbacks',
-        'Managed 50+ microservices across multiple environments'
+        'Designed custom VPC with public and private subnets, IGW, and NAT Gateway',
+        'Deployed web, app, and database layers using EC2 and RDS (MySQL)',
+        'Configured Application Load Balancer for high availability and traffic distribution',
+        'Improved security by isolating database in private subnet with controlled access'
       ],
       highlights: [
-        'Automated synchronization between Git repositories and Kubernetes clusters',
-        'Built custom Helm charts for standardized application deployment',
-        'Integrated monitoring and alerting for real-time deployment tracking'
+        'Implemented complete 3-tier architecture following AWS best practices',
+        'Configured secure networking using security groups and route tables',
+        'Ensured fault tolerance and scalability using load balancing'
       ]
     },
     {
-      title: 'Production-Grade Zero-Touch Infrastructure',
-      description: 'Fully automated build-test-deploy cycle for cloud infrastructure.',
-      icon: Server,
-      gradient: 'from-green-500 to-green-600',
-      repo: 'https://github.com/PruthvirajPhadatare/End-to-End-CI-CD-Infra-on-AWS',
-      technologies: ['Terraform', 'Jenkins', 'AWS EC2', 'RDS', 'CloudFormation'],
+      title: '3-Tier Application (Docker + Kubernetes)',
+      description: 'Transformed a traditional 3-tier application into a containerized and scalable Kubernetes deployment.',
+      icon: Boxes,
+      gradient: 'from-blue-500 to-blue-600',
+      repo: 'https://github.com/PruthvirajPhadatare/3-Tier-App-Deployment',
+      technologies: ['Docker', 'Kubernetes', 'K8s', 'Microservices', 'Containerization'],
       achievements: [
-        'Achieved complete automation of infrastructure provisioning',
-        'Eliminated manual configuration drift across 100+ resources',
-        'Reduced infrastructure spin-up time from 4 hours to 30 minutes',
-        'Implemented infrastructure versioning and reproducibility'
+        'Containerized frontend, backend, and database using Docker',
+        'Created Kubernetes deployments, services, and ConfigMaps for orchestration',
+        'Enabled internal communication using ClusterIP services',
+        'Achieved scalable architecture with Kubernetes auto-healing capabilities'
       ],
       highlights: [
-        'Created modular Terraform blueprints for reusable infrastructure patterns',
-        'Built Jenkins pipelines for automated testing and validation',
-        'Integrated security scanning and compliance checks in the pipeline'
+        'Converted monolithic setup into container-based microservices architecture',
+        'Implemented service discovery and environment-based configurations',
+        'Ensured portability across local and cloud environments'
+      ]
+    },
+    {
+      title: 'DevSecOps Pipeline Implementation',
+      description: 'Built a secure CI/CD pipeline integrating automated security scanning and quality analysis.',
+      icon: Shield,
+      gradient: 'from-red-500 to-red-600',
+      repo: 'https://github.com/PruthvirajPhadatare/DevSecOps-Project',
+      technologies: ['Jenkins', 'Docker', 'Trivy', 'SonarQube', 'CI/CD', 'Security'],
+      achievements: [
+        'Integrated SonarQube for static code quality analysis',
+        'Implemented Trivy for container vulnerability scanning',
+        'Automated CI/CD pipeline using Jenkins for build, test, and deploy stages',
+        'Reduced security risks by shifting security checks earlier in pipeline'
+      ],
+      highlights: [
+        'Implemented DevSecOps best practices with automated security gates',
+        'Enabled continuous monitoring of code quality and vulnerabilities',
+        'Improved overall deployment reliability and security posture'
+      ]
+    },
+    {
+      title: 'Node.js CI/CD Pipeline Automation',
+      description: 'Automated end-to-end deployment of a Node.js application using CI/CD pipelines on AWS.',
+      icon: Workflow,
+      gradient: 'from-green-500 to-green-600',
+      repo: 'https://github.com/PruthvirajPhadatare/node-todo-cicd',
+      technologies: ['Node.js', 'Jenkins', 'Docker', 'AWS EC2', 'GitHub Webhooks'],
+      achievements: [
+        'Designed CI/CD pipeline using Jenkins with GitHub integration',
+        'Automated build and deployment process triggered by code commits',
+        'Containerized application using Docker for consistency',
+        'Reduced deployment time and manual intervention significantly'
+      ],
+      highlights: [
+        'Implemented webhook-based automation for real-time deployments',
+        'Ensured zero-downtime deployments using Docker and reverse proxy',
+        'Improved build success rate and deployment efficiency'
+      ]
+    },
+    {
+      title: 'Cloud-Native Monitoring Application',
+      description: 'Built a real-time monitoring dashboard for system metrics using cloud-native tools.',
+      icon: Activity,
+      gradient: 'from-purple-500 to-purple-600',
+      repo: 'https://github.com/PruthvirajPhadatare/Cloud-native-monitoring-app',
+      technologies: ['Python', 'Flask', 'Kubernetes', 'psutil', 'Docker'],
+      achievements: [
+        'Developed real-time system metrics dashboard using Flask and psutil',
+        'Deployed application on Kubernetes using containerized setup',
+        'Handled 100+ concurrent requests with optimized performance',
+        'Improved monitoring visibility and system performance insights'
+      ],
+      highlights: [
+        'Implemented lightweight monitoring solution for CPU, memory, and system stats',
+        'Containerized application for easy deployment and scaling',
+        'Enhanced responsiveness with optimized backend processing'
+      ]
+    },
+    {
+      title: 'Two-Tier Flask Application on Kubernetes',
+      description: 'Deployed a Flask-MySQL application on Kubernetes with persistent storage and scalability.',
+      icon: Layers,
+      gradient: 'from-indigo-500 to-indigo-600',
+      repo: 'https://github.com/PruthvirajPhadatare/two-tier-flaskapp',
+      technologies: ['Flask', 'MySQL', 'Kubernetes', 'Docker', 'AWS'],
+      achievements: [
+        'Deployed Flask application with MySQL database on Kubernetes cluster',
+        'Configured persistent volumes and claims for data durability',
+        'Implemented horizontal pod scaling for improved performance',
+        'Achieved high availability with Kubernetes service abstraction'
+      ],
+      highlights: [
+        'Built scalable two-tier architecture using container orchestration',
+        'Ensured reliable storage using persistent volume configurations',
+        'Improved application uptime and resilience'
+      ]
+    },
+    {
+      title: '3-Tier Chat Application on Kubernetes',
+      description: 'Implemented a scalable real-time chat application using Kubernetes-based microservices architecture.',
+      icon: MessageSquare,
+      gradient: 'from-pink-500 to-pink-600',
+      repo: 'https://github.com/PruthvirajPhadatare/3-Tier-Chatapp-k8s',
+      technologies: ['Kubernetes', 'Docker', 'WebSockets', 'Node.js', 'Microservices'],
+      achievements: [
+        'Designed multi-tier chat application with frontend, backend, and database layers',
+        'Deployed application on Kubernetes with proper service exposure',
+        'Enabled real-time communication using WebSockets',
+        'Scaled backend services to handle multiple concurrent users'
+      ],
+      highlights: [
+        'Implemented microservices-based architecture for real-time systems',
+        'Configured Kubernetes services and ingress for external access',
+        'Ensured high availability and scalability'
       ]
     }
   ];
@@ -119,7 +214,6 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  {/* GitHub Button */}
                   <a
                     href={project.repo}
                     target="_blank"
@@ -129,7 +223,6 @@ export default function Projects() {
                     <Github className="w-4 h-4" />
                     View Source Code
                   </a>
-
                 </div>
               </div>
             </div>
